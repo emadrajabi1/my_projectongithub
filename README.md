@@ -1,2 +1,2 @@
 # my_projectongithub
-Here im  going to training on different project
+Here im  going to training on random casual project.
