@@ -1,0 +1,14 @@
+def run_timing():
+    number_of_runs = 0
+    total_time = 0
+    
+    while True:
+        one_run = input('Enter how many KM do you Run: ')
+        if not one_run:
+            break
+        number_of_runs += 1
+        total_time +=float(one_run)
+    average_time = total_time / number_of_runs
+    print(f'Avaerage of {average_time},over {number_of_runs} runs')
+    
+run_timing()
