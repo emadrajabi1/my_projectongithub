@@ -15,8 +15,6 @@ def hex_output():
         dec_value +=num*(16**power)
         
     print(dec_value)
-    
-    
-    
+      
 hex_output()
 
