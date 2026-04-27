@@ -1,15 +1,28 @@
+#Average
+
 numbers = []
+total_sum = 0
 
 while True:
-    user = input('Enter a number (Enter to stop):')
+    entery = input('Enter a Number(ENTER TO STOP):')
     
-    if user =='':
+    if entery == '':
         break
     
-    numbers.append(float(user))
+    number = int(entery)
     
-average = sum(numbers) / len(numbers)
+    numbers.append(number)
+    total_sum +=number
+    
+count = len(numbers)
 
-print('Numbers:', numbers)
-print('-' * 30)
-print('Average:', average)
+if count > 0 :
+    average = total_sum / count
+    print('numbers:', numbers)
+    print('count:', count)
+    print('-' * 50)
+    print('average:', average)
+    
+else:
+    print('enter number correctly')
+    
