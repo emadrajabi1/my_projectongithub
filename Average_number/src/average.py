@@ -4,19 +4,23 @@ numbers = []
 total_sum = 0
 
 while True:
-    entery = input('Enter a Number(ENTER TO STOP):')
+    entry = input('Enter a Number(ENTER TO STOP):')
     
-    if entery == '':
+    if entry == '':
         break
     
-    number = int(entery)
+    try:
+        number = float(entry)
+    except ValueError:
+        print('Invalid input')
+        continue
     
     numbers.append(number)
-    total_sum +=number
+    total_sum += number
     
 count = len(numbers)
 
-if count > 0 :
+if count > 0:
     average = total_sum / count
     print('numbers:', numbers)
     print('count:', count)
@@ -24,5 +28,5 @@ if count > 0 :
     print('average:', average)
     
 else:
-    print('enter number correctly')
+    print('No valid numbers entered')
     
