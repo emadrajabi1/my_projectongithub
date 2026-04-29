@@ -5,13 +5,13 @@ def guessing_game():
     level = input('Level: ').lower()
     
     if level == 'easy':
-        low,high = 0,50
-        max_attempts = 7
-    elif level == 'medium':
         low,high = 0,100
         max_attempts = 7
-    elif level == 'hard':
+    elif level == 'medium':
         low,high = 0,500
+        max_attempts = 7
+    elif level == 'hard':
+        low,high = 0,1000
         max_attempts = 10
     else:
         print('invalid level')
