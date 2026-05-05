@@ -30,9 +30,11 @@ while True:
     
     if entry == '':
         break
-    
     try:
         number = float(entry)
+        if number < 0 :
+            print('Please enter a positive number')
+            continue
     except ValueError:
         print('Invalid input')
         continue
@@ -51,4 +53,3 @@ if count > 0:
     
 else:
     print('No valid numbers entered')
-    
