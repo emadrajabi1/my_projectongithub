@@ -20,14 +20,17 @@ A Python program that collects numbers from the user and calculates the running 
 
 * Python +3.7
 
-## Game Structure
-```
-|
-|--scr/
-    |--sum.py-the main game
-|
-|--README.md - This file
+## Project Structure
 
+```
+Summing_Numbers/
+│
+└── src/
+    │
+    └── Sum_Medium/
+        │
+        ├── sum.py   # the main game
+        └── README.md     # this file
 ```
 
 ## How to Run

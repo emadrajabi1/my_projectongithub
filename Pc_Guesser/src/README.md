@@ -14,6 +14,7 @@ A Python game where the computer guesses the number you are thinking of using bi
 
 
 ## Game Structure
+
 ```
 |
 |--scr/

@@ -5,8 +5,8 @@ this project is a simple popular game that an user play against computer which m
 ## Game Structure
 ```
 |
-|--str/
-    |--game.py-the main game
+|--src/
+    |--game.py-the main project
 |
 |--README.md - This file
 

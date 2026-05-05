@@ -19,13 +19,17 @@ A simple Python program to calculate the average distance (in KM) of running ses
 
 * Python +3.7
 
-## Game Structure
+## Project Structure
+
 ```
-|
-|--str/
-    |--run.py-the main game
-|
-|--README.md - This file
+Run_timing/
+│
+└── src/
+    │
+    └── Run_Medium/
+        │
+        ├── run.py the main project
+        └── README.md     # this file
 
 ```
 

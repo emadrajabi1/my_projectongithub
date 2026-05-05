@@ -25,15 +25,19 @@ A Python program that collects numbers from the user and provides detailed stati
 
 * Python +3.7
 
-## Game Structure
-```
-|
-|--scr/
-    |--sum.py-the main game
-|
-|--README.md - This file
+## Project Structure
 
 ```
+Summing_Numbers/
+│
+└── src/
+    │
+    └── Sum_Pro/
+        │
+        ├── sum.py   # the main game
+        └── README.md     # this file
+```
+
 ## How to Run
 
 ```

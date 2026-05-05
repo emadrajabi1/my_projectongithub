@@ -13,11 +13,12 @@ A simple Python script to calculate the average of user-entered numbers.
 
 * Python +3.7
 
-## Game Structure
+## Project Structure
+
 ```
 |
 |--str/
-    |--average.py-the main game
+    |--average.py-the main project
 |
 |--README.md - This file
 

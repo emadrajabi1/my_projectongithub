@@ -22,7 +22,8 @@ A Python program to analyze a sentence and count characters, words, and vowels.
 
 * Python +3.7
 
-## Game Structure
+## Project Structure
+
 ```
 |
 |--scr/

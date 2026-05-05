@@ -25,13 +25,17 @@ A Python program to track and analyze running sessions with detailed statistics.
 
 * Python 3.x
 
-## Game Structure
+## Project Structure
+
 ```
-|
-|--str/
-    |--run.py-the main game
-|
-|--README.md - This file
+Run_timing/
+│
+└── src/
+    │
+    └── Run_Pro/
+        │
+        ├── run.py the main project
+        └── README.md     # this file
 
 ```
 

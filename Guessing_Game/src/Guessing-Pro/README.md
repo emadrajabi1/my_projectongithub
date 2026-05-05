@@ -17,6 +17,20 @@ A fun Python guessing game where the computer picks a random number and you try 
 
 * Python +3.7
 
+## Game Structure
+
+```
+Guessing_Game/
+│
+└── src/
+    │
+    └── Guessing_Pro/
+        │
+        ├── guessing.py   # the main game
+        └── README.md     # this file
+
+```
+
 ## How to Run
 
 ```

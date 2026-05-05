@@ -11,13 +11,16 @@ A simple Python game where the computer selects a random number and the user tri
 * Continuous loop until correct guess
 
 ## Game Structure
-```
-|
-|--str/
-    |--guessing.py-the main game
-|
-|--README.md - This file
 
+```
+Guessing_Game/
+│
+└── src/
+    │
+    └── Guessing_Easy/
+        │
+        ├── guessing.py   # the main game
+        └── README.md     # this file
 ```
 
 ## Requirements

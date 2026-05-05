@@ -21,13 +21,16 @@ A Python program that converts a hexadecimal (base 16) number to its decimal (ba
 
 * Python +3.7
 
-## Game Structure
+## Project Structure
 ```
-|
-|--scr/
-    |--dec.py-the main game
-|
-|--README.md - This file
+Dec_To_Hex/
+│
+└── src/
+    │
+    └── hex_to_dec/
+        │
+        ├── dec.py the main project
+        └── README.md     # this file
 
 ```
 

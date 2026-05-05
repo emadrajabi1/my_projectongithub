@@ -19,15 +19,19 @@ A simple Python program that continuously takes numbers as input and calculates 
 
 * Python +3.7
 
-## Game Structure
-```
-|
-|--scr/
-    |--sum.py-the main game
-|
-|--README.md - This file
+## Project Structure
 
 ```
+Summing_Numbers/
+│
+└── src/
+    │
+    └── Sum_Easy/
+        │
+        ├── sum.py   # the main game
+        └── README.md     # this file
+```
+
 ## How to Run
 
 ```
