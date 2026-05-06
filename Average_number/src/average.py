@@ -53,3 +53,6 @@ if count > 0:
     
 else:
     print('No valid numbers entered')
+    
+if __name__ == "__main__":
+    calculate_average()

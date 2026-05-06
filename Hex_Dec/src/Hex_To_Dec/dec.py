@@ -29,5 +29,6 @@ def hex_output():
             print('-' * 30)
     
     
-hex_output()
+if __name__ == "__main__":
+    hex_output()
 

@@ -1,17 +1,22 @@
 import statistics
 
-def run_timing_advanced():
+def run_timing_advanced() -> None:
+    
+    """
+    Read KM inputs and print count, mean, min, and max.
+    Stops on empty input. Ignores invalid and negative values.
+    """
+    
     runs = []
     while True:
-        user_input = input('Enter how many time KM do you Run: ').strip()
+        user_input:str = input('Enter how many KM for this Run: ').strip()
         if not user_input:
             break
         
         try:
-            run_time = float(user_input)
+            run_time:float = float(user_input)
             if run_time < 0 :
                 print ('DO NOT ENTER NEGATIVE TIME.')
-            
                 continue
             runs.append(run_time)
         except ValueError:
@@ -19,14 +24,15 @@ def run_timing_advanced():
             continue
     if runs:
         average = statistics.mean(runs)
-        fatest = min(runs)
-        slowest = max(runs)
+        shortest = min(runs)
+        longest = max(runs)
         
         print('-' * 30)
         print(f'How many time : {len(runs)}')
-        print(f'Fatest:{fatest:.2f}')
-        print(f'Slowest:{slowest:.2f}')
+        print(f'Shortest:{shortest:.2f}')
+        print(f'Longest:{longest:.2f}')
         print('-' * 30)
-        print('there is not anything for calculating.')
+        print('No data to calculate.')
         
-run_timing_advanced()
+if __name__ == "__main__":
+    run_timing_advanced()

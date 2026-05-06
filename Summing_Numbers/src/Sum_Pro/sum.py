@@ -1,16 +1,24 @@
 
 #Sum_number_P
 def sum_advanced():
-    total = 0
-    count = 0
-    largest = None
-    smallest = None
+    """
+Read numeric inputs and compute summary statistics.
+
+.. behavior::
+   - Empty input terminates execution
+   - Non-numeric input is ignored
+   - Tracks min/max incrementally
+"""
+    total:float = 0
+    count:int = 0
+    largest:float = None
+    smallest:float = None
     while True:
         user = input('enter number:')
         if user == '':
             break
         try:
-            number = int(user)
+            number:float = int(user)
         except ValueError:
             print('invalid input')
             continue
@@ -30,4 +38,6 @@ def sum_advanced():
         print('Average:', average)
         print('Largest:', largest)
         print('Smallest:', smallest)
-sum_advanced()
+        
+if __name__ == "__main__":
+    sum_advanced()
