@@ -15,44 +15,58 @@ def calculate_average():
         - Count of numbers
         - A separator line
         - The calculated average
-
-    Returns:
-        None
-
     Edge Cases:
     - If no valid numbers are entered, a message is displayed instead of computing an average.
     """
-numbers = []
-total_sum = 0
+    numbers:float = []
+    total_sum:float = 0
 
-while True:
-    entry = input('Enter a Number(ENTER TO STOP):')
+    while True:
+        entry:float = input('Enter a Number(ENTER TO STOP):')
     
-    if entry == '':
-        break
-    try:
-        number = float(entry)
-        if number < 0 :
-            print('Please enter a positive number')
+        if entry == '':
+            break
+        
+        try:
+            number = float(entry)
+            
+            if number < 0 :
+                print('Please enter a positive number')
+                continue
+        except ValueError:
+            print('Invalid input')
             continue
-    except ValueError:
-        print('Invalid input')
-        continue
     
-    numbers.append(number)
-    total_sum += number
+        numbers.append(number)
+        total_sum += number
     
-count = len(numbers)
+    count:int = len(numbers)
 
-if count > 0:
-    average = total_sum / count
-    print('numbers:', numbers)
-    print('count:', count)
-    print('-' * 50)
-    print('average:', average)
+    if count > 0:
+        average = total_sum / count
+        print('numbers:', numbers)
+        print('count:', count)
+        print('-' * 50)
+        print('average:', average)
+        print('-' * 100)
+        
+    else:
+        print('No valid numbers entered')
     
-else:
-    print('No valid numbers entered')
     
-if __name__ == "__main__":
+    
+while True:
     calculate_average()
+    
+    continue_process= input('\n do you want calculate more?(y(YES)/n(NO))').strip().lower()
+    if continue_process in ['y','yes']:
+        continue
+    elif continue_process  in ['n','no']:
+        print ('GoodBye')
+        break
+    elif continue_process == '':
+            break
+    else:
+        print('Pleae enter a correct respuest.')
+        
+        
