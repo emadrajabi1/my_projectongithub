@@ -69,4 +69,6 @@ while True:
     else:
         print('Pleae enter a correct respuest.')
         
-        
+
+if __name__ == "__main__":
+    calculate_average()
