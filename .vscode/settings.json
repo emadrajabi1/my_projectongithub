@@ -18,5 +18,7 @@
         "titleBar.inactiveBackground": "#c2935699",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.remoteColor": "#c29356"
+    "peacock.remoteColor": "#c29356",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
 }

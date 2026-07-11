@@ -52,23 +52,19 @@ def calculate_average():
         
     else:
         print('No valid numbers entered')
-    
-    
-    
-while True:
-    calculate_average()
-    
-    continue_process= input('\n do you want calculate more?(y(YES)/n(NO))').strip().lower()
-    if continue_process in ['y','yes']:
-        continue
-    elif continue_process  in ['n','no']:
-        print ('GoodBye')
-        break
-    elif continue_process == '':
-            break
-    else:
-        print('Pleae enter a correct respuest.')
         
 
 if __name__ == "__main__":
-    calculate_average()
+    while True:
+        calculate_average()
+        
+        continue_process= input('\n do you want calculate more?(y(YES)/n(NO))').strip().lower()
+        if continue_process in ['y','yes']:
+            continue
+        elif continue_process  in ['n','no']:
+            print ('GoodBye')
+            break
+        elif continue_process == '':
+                break
+        else:
+            print('Pleae enter a correct respuest.')
